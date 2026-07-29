@@ -1,0 +1,18 @@
+---
+name: Repository Update
+
+on:
+  repository_dispatch:
+    types: ["update"]
+
+jobs:
+  updater:
+    name: Updater for ${{ github.event.client_payload.app }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run repository updater
+        uses: hassio-addons/repository-updater@v2.0.1
+        with:
+          app: ${{ github.event.client_payload.app }}
+          repository: ${{ github.repository }}
+          token: ${{ secrets.UPDATER_TOKEN }}
