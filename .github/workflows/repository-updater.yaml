@@ -7,13 +7,18 @@ on:
     types: ["update"]
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   updater:
     name: Updater for ${{ github.event.client_payload.app }}
     runs-on: ubuntu-latest
     steps:
+      - name: Configure Git Author
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       - name: Run repository updater
         uses: hassio-addons/repository-updater@v2.0.1
         with:
