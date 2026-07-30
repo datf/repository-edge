@@ -29,18 +29,9 @@ https://github.com/datf/repository-edge
 
 ## Apps provided by this repository
 
-### &#10003; [Caddy Custom][addon-caddy-custom]
-
-![Latest Version][caddy-custom-version-shield]
-![Supports armhf Architecture][caddy-custom-armhf-shield]
-![Supports armv7 Architecture][caddy-custom-armv7-shield]
-![Supports aarch64 Architecture][caddy-custom-aarch64-shield]
-![Supports amd64 Architecture][caddy-custom-amd64-shield]
-![Supports i386 Architecture][caddy-custom-i386-shield]
+### &#10003; Caddy Custom
 
 Cusomizable caddy server
-
-[:books: Caddy Custom app documentation][addon-doc-caddy-custom]
 
 ## Releases
 
@@ -51,11 +42,3 @@ based on the following:
 - ``MAJOR``: Incompatible or major changes.
 - ``MINOR``: Backwards-compatible new features and enhancements.
 - ``PATCH``: Backwards-compatible bugfixes and package updates.
-
-## Support
-
-Open an issue here on GitHub:
-
-- [Open an issue for the app: Caddy Custom][caddy-custom-issue]
-
-For a general repository issue or app ideas [open an issue here][issue]
