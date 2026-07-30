@@ -4,5 +4,9 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: daily
+      interval: weekly
       time: "06:00"
+    cooldown:
+      default-days: 7
+    assignees:
+      - "datf"
