@@ -1,9 +1,13 @@
 ---
 name: Repository Update
 
+# yamllint disable-line rule:truthy
 on:
   repository_dispatch:
     types: ["update"]
+
+permissions:
+  contents: read
 
 jobs:
   updater:
