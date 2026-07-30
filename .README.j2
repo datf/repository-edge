@@ -30,18 +30,9 @@ Use the following URL to add this repository to your Home Assistant:
 ## Apps provided by this repository
 
 {% for addon in addons %}
-### &#10003; [{{ addon.name }}][addon-{{ addon.target }}]
-
-![Latest Version][{{ addon.target }}-version-shield]
-![Supports armhf Architecture][{{ addon.target }}-armhf-shield]
-![Supports armv7 Architecture][{{ addon.target }}-armv7-shield]
-![Supports aarch64 Architecture][{{ addon.target }}-aarch64-shield]
-![Supports amd64 Architecture][{{ addon.target }}-amd64-shield]
-![Supports i386 Architecture][{{ addon.target }}-i386-shield]
+### &#10003; {{ addon.name }}
 
 {{ addon.description }}
-
-[:books: {{ addon.name }} app documentation][addon-doc-{{ addon.target }}]
 
 {% endfor %}
 ## Releases
@@ -53,13 +44,3 @@ based on the following:
 - ``MAJOR``: Incompatible or major changes.
 - ``MINOR``: Backwards-compatible new features and enhancements.
 - ``PATCH``: Backwards-compatible bugfixes and package updates.
-
-## Support
-
-Open an issue here on GitHub:
-
-{% for addon in addons %}
-- [Open an issue for the app: {{ addon.name }}][{{ addon.target }}-issue]
-{% endfor %}
-
-For a general repository issue or app ideas [open an issue here][issue]
