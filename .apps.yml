@@ -4,4 +4,4 @@ apps:
   caddy-custom:
     repository: datf/hassio-caddy-custom
     target: caddy-custom
-    image: ghcr.io/datf/hassio-caddy-custom
+    image: ghcr.io/datf/caddy-custom
