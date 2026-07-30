@@ -1,5 +1,5 @@
 name: Caddy Custom
-version: 0.1.3
+version: 0.1.5
 slug: caddy-custom
 description: Cusomizable caddy server
 url: https://github.com/datf/hassio-caddy-custom
@@ -29,4 +29,4 @@ schema:
 environment:
   LOG_FORMAT: '{LEVEL}: {MESSAGE}'
 init: false
-image: ghcr.io/datf/hassio-caddy-custom
+image: ghcr.io/datf/caddy-custom
