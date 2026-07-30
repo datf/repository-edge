@@ -1,5 +1,5 @@
 name: Caddy Custom
-version: 0.0.12
+version: 0.1.2
 slug: caddy-custom
 description: Cusomizable caddy server
 url: https://github.com/datf/hassio-caddy-custom
