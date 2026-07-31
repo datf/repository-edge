@@ -29,10 +29,6 @@ https://github.com/datf/repository-edge
 
 ## Apps provided by this repository
 
-### &#10003; Caddy Custom
-
-Cusomizable caddy server
-
 ## Releases
 
 Releases are based on [Semantic Versioning][semver], and use the format
