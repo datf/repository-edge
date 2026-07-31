@@ -1,5 +1,5 @@
 ---
-channel: stable
+channel: edge
 apps:
   caddy-custom:
     repository: datf/hassio-caddy-custom
