@@ -1,4 +1,5 @@
 # Changelog since v0.1.7
+- description fixes due to formatting 
 - Revert "point renovate to the latest alpine repo rather than force the version"
 
 This reverts commit 71735e3ad7c52a5a21ed41ee20686be3706e74db. 

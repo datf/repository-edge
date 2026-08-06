@@ -6,20 +6,13 @@ configuration:
   args:
     name: Caddy arguments
     description: >-
-      Arguments to pass to caddy, such as `--watch` if you are in a local development environment and want to reload the config file whenever it changes.
+      Arguments to pass to caddy, such as "--watch" if you are in a local development environment and want to reload the config file whenever it changes.
   env_vars:
     name: Environment variables
     description: >-
       ENV variables to pass to both xcaddy builder and the caddy process.
-      For example `CADDY_VERSION` will set the version of caddy to build.
-      Or you can set something like `DOMAIN` and then use it in your Caddy file:
-      ```
-      {$DOMAIN:localhost} {
-        root * /var/www
-      }
-      ```
   plugins:
     name: Caddy plugins
     description: >-
       Plugins to compile caddy with.
-      Must be in the format `github.com/USER/REPOSITORY`.
+      Must be in the format "github.com/USER/REPOSITORY".
