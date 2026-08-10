@@ -1,1 +1,1 @@
-- fix config options
+- testing default ethernet link and network options schema
