@@ -33,6 +33,10 @@ https://github.com/datf/repository-edge
 
 Cusomizable caddy server
 
+### &#10003; Dante
+
+SOCKS proxy server
+
 ## Releases
 
 Releases are based on [Semantic Versioning][semver], and use the format
