@@ -5,3 +5,7 @@ apps:
     repository: datf/hassio-caddy-custom
     target: caddy-custom
     image: ghcr.io/datf/caddy-custom
+  dante:
+    repository: datf/app-dante
+    target: dante
+    image: ghcr.io/datf/dante
