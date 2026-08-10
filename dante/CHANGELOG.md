@@ -1,1 +1,1 @@
-- remove unused variables
+- fix config options
