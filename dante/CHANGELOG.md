@@ -1,1 +1,1 @@
-- testing default ethernet link and network options schema
+- network config did not work

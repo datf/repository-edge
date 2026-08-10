@@ -1,5 +1,5 @@
 name: Dante
-version: ece9b03
+version: 2154ec7
 slug: dante
 description: SOCKS proxy server
 url: https://github.com/datf/app-dante
@@ -12,14 +12,12 @@ map:
 - addon_config:rw
 options:
   log_level: info
-  network_interface: ''
   require_username_auth: false
   credentials:
     username: admin
     password: ''
 schema:
   log_level: list(trace|debug|info|notice|warning|error|fatal)
-  network_interface: device(subsystem=net)
   require_username_auth: bool
   credentials:
     username: str?
