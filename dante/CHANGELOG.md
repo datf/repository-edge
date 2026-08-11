@@ -1,1 +1,1 @@
-- added support for IPv6
+- Create LICENSE
