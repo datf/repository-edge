@@ -1,0 +1,22 @@
+---
+configuration:
+  log_level:
+    name: Log Level
+    description: >-
+      The log_level option controls the level of log output by the add-on and can be changed to be more or less verbose, which might be useful when you are dealing with an unknown issue.
+  require_username_auth:
+    name: Require Username Authentication
+    description: >-
+      Set this to true if you want to require SOCKS clients to authenticate with a username and password. When enabled, the add-on system will automatically create the user so that Dante can authenticate against it. Warning: Standard SOCKS5 username/password authentication is sent in cleartext (unencrypted).
+  credentials:
+    name: Credentials
+    description: >-
+      This section defines the user credentials that will be created if require_username_auth is set to true.
+  credentials_username:
+    name: Username
+    description: >-
+      The username for the SOCKS proxy.
+  credentials_password:
+    name: Password
+    description: >-
+      The password for the SOCKS proxy.
