@@ -1,4 +1,5 @@
 # Changelog since v0.1.0
+- avoid sysctl 
 - prevent binding to host network adapters 
 - net admin privileges and access to tun device 
 - Revert "fixed slug"
