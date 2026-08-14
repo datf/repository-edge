@@ -12,4 +12,4 @@ apps:
   dante-to-wireguard:
     repository: datf/app-dante-to-wireguard
     target: dante
-    image: ghcr.io/datf/dante_to_wireguard
+    image: ghcr.io/datf/dante-to-wireguard
