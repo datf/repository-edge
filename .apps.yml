@@ -11,5 +11,5 @@ apps:
     image: ghcr.io/datf/dante
   dante-to-wireguard:
     repository: datf/app-dante-to-wireguard
-    target: dante
+    target: dante-to-wireguard
     image: ghcr.io/datf/dante-to-wireguard
