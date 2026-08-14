@@ -9,3 +9,7 @@ apps:
     repository: datf/app-dante
     target: dante
     image: ghcr.io/datf/dante
+  dante:
+    repository: datf/app-dante-to-wireguard
+    target: dante
+    image: ghcr.io/datf/dante-to-wireguard
