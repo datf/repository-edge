@@ -1,1 +1,1 @@
-- trying to fix renovate base branch issue
+- back to the original dockerfile with the new plex version
