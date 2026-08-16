@@ -1,8 +1,2 @@
-# Changelog since v0.1.0
-- avoid sysctl 
-- prevent binding to host network adapters 
-- net admin privileges and access to tun device 
-- Revert "fixed slug"
-
-This reverts commit 72b0c2ce397856ebdbfdefde4c6a7e327e645f08. 
-- fixed slug 
+# Changelog since v0.1.1
+- LAN config + config rotation 

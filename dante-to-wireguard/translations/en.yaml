@@ -20,3 +20,7 @@ configuration:
     name: Password
     description: >-
       The password for the SOCKS proxy.
+  lan_subnets:
+    name: LAN Subnets
+    description: >-
+      A list of IPv4 and IPv6 subnets in CIDR notation (e.g. 192.168.1.0/24) that belong to your LAN. These networks will be routed through your default gateway instead of the VPN so that the add-on can communicate locally. Defaults include common Docker and IPv6 local ranges.
