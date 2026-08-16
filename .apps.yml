@@ -13,3 +13,7 @@ apps:
     repository: datf/app-dante-to-wireguard
     target: dante-to-wireguard
     image: ghcr.io/datf/dante-to-wireguard
+  plex:
+    repository: datf/app-plex
+    target: plex
+    image: ghcr.io/datf/plex
