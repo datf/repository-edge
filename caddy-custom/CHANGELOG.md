@@ -1,9 +1,5 @@
-# Changelog since v1.0.2
-- Merge pull request #8 from datf/renovate/app-base-image
+# Changelog since v1.0.3
+- Merge pull request #10 from datf/renovate/caddyserver-xcaddy-0.x
 
-⬆️ Update ghcr.io/hassio-addons/base Docker tag to v21.0.2 
-- Merge pull request #9 from datf/renovate/hassio-addons-workflows-3.x
-
-⬆️ Update hassio-addons/workflows action to v3.0.1 
-- ⬆️ Update hassio-addons/workflows action to v3.0.1 
-- ⬆️ Update ghcr.io/hassio-addons/base Docker tag to v21.0.2 
+⬆️ Update caddyserver/xcaddy to v0.4.7 
+- ⬆️ Update caddyserver/xcaddy to v0.4.7 
