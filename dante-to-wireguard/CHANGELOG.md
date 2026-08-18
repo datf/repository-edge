@@ -1,4 +1,5 @@
 # Changelog since v0.1.1
+- Files for HASS and github 
 - New MTU configuration override to prevent packet fragmentation blackholes 
 - updated base image 
 - Merge pull request #2 from datf/renovate/hassio-addons-workflows-3.x
