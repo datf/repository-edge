@@ -1,4 +1,6 @@
 # Changelog since v1.0.0
+- Merge branch 'hassio-addons:main' into main 
+- ⬆️ Update ghcr.io/hassio-addons/debian-base Docker tag to v9.4.0 (#298) 
 - Merge pull request #5 from datf/renovate/hassio-addons-workflows-3.x
 
 ⬆️ Update hassio-addons/workflows action to v3.0.1 
