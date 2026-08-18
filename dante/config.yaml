@@ -1,5 +1,5 @@
 name: Dante
-version: c1020b1
+version: 46c5146
 slug: dante
 description: SOCKS proxy server
 url: https://github.com/datf/app-dante
@@ -7,6 +7,9 @@ arch:
 - amd64
 - aarch64
 startup: services
+ports:
+  1080/tcp: null
+  1080/udp: null
 ports_description:
   1080/tcp: SOCKS proxy TCP
   1080/udp: SOCKS proxy UDP
