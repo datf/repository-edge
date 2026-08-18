@@ -1,5 +1,5 @@
 name: Dante to Wireguard
-version: 3d89dac
+version: f8b6f48
 slug: dante-to-wireguard
 description: SOCKS proxy server with VPN exit
 url: https://github.com/datf/app-dante-to-wireguard
@@ -31,6 +31,7 @@ options:
   - fe80::/10
   - fc00::/7
   - ff00::/8
+  mtu: 1280
 schema:
   log_level: list(trace|debug|info|notice|warning|error|fatal)
   require_username_auth: bool
@@ -39,5 +40,6 @@ schema:
     password: password?
   lan_subnets:
   - str
+  mtu: int(1280,1500)?
 init: false
 image: ghcr.io/datf/dante-to-wireguard

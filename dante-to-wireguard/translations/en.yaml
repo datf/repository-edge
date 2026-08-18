@@ -24,3 +24,7 @@ configuration:
     name: LAN Subnets
     description: >-
       A list of IPv4 and IPv6 subnets in CIDR notation (e.g. 192.168.1.0/24) that belong to your LAN. These networks will be routed through your default gateway instead of the VPN so that the add-on can communicate locally. Defaults include common Docker and IPv6 local ranges.
+  mtu:
+    name: MTU
+    description: >-
+      The MTU (Maximum Transmission Unit) value for the WireGuard interface. WireGuard adds encryption overhead to your traffic. If this is set too high (e.g., 1500), packets will exceed physical network limits and get silently dropped, causing connection stalls. Lowering the MTU prevents this issue. 1280 is the safest default, but you can try 1400 for better performance. This explicitly overrides any MTU specified in your WireGuard configuration files.
