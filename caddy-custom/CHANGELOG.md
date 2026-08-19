@@ -1,4 +1,5 @@
 # Changelog since v1.0.3
+- replaced repology with custom datasource for alpine packages 
 - Merge pull request #10 from datf/renovate/caddyserver-xcaddy-0.x
 
 ⬆️ Update caddyserver/xcaddy to v0.4.7 
