@@ -1,4 +1,2 @@
-# Changelog since v1.0.3
-- updated default config 
-- added port forwarding 
-- Removed host network privileges 
+# Changelog since v2.0.0
+- replaced repology with custom datasource for alpine packages 
