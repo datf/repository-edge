@@ -37,11 +37,6 @@ require_username_auth: false
 credentials:
   username: "admin"
   password: "your_secure_password"
-lan_subnets:
-  - 172.30.0.0/16
-  - fe80::/10
-  - fc00::/7
-  - ff00::/8
 mtu: 1280
 ```
 
@@ -76,14 +71,6 @@ This section defines the user credentials that will be created if `require_usern
 
 - **`username`**: The username for your SOCKS proxy.
 - **`password`**: The password for your SOCKS proxy. (Make sure to pick a strong one!)
-
-### Option: `lan_subnets`
-
-A list of IP ranges for your local network, in CIDR format (e.g., `192.168.1.0/24` or `210f:a987::/64`).
-
-When you route all traffic through a VPN, the add-on might lose the ability to reply to clients on your local network. The subnets specified here will be explicitly routed through your default gateway (bypassing the VPN), so you can still access the SOCKS proxy locally.
-
-Standard IPv6 local blocks and the default Home Assistant internal Docker network (`172.30.0.0/16`) are included by default.
 
 ### Option: `mtu`
 

@@ -1,4 +1,5 @@
 # Changelog since v1.0.0
+- testing out routing dante through wg iface without making it the default gateway 
 - Merge pull request #3 from datf/renovate/hassio-addons-workflows-4.x
 
 ⬆️ Update hassio-addons/workflows action to v4 
