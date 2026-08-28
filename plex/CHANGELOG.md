@@ -1,4 +1,5 @@
 # Changelog since v1.0.1
+- fix: Give plex access to LAN to allow for local playback 
 - Merge branch 'hassio-addons:main' into main 
 - ⬆️ Update hassio-addons/workflows action to v4 (#301)
 
