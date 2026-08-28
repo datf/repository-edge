@@ -41,5 +41,5 @@ If you are more interested in stable releases of our apps:
 [patreon-shield]: https://frenck.dev/wp-content/uploads/2019/12/patreon.png
 [patreon]: https://www.patreon.com/frenck
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
-[release-shield]: https://img.shields.io/badge/version-a8f31b8-blue.svg
-[release]: https://github.com/datf/app-plex/tree/a8f31b8
+[release-shield]: https://img.shields.io/badge/version-12a32cf-blue.svg
+[release]: https://github.com/datf/app-plex/tree/12a32cf
