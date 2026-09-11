@@ -1,8 +1,7 @@
-# Changelog since v1.0.4
-- Merge pull request #13 from datf/renovate/app-base-image
+# Changelog since v1.0.5
+- Merge pull request #15 from datf/renovate/go-1.x
 
-⬆️ Update ghcr.io/hassio-addons/base Docker tag to v21.0.4 
-- ⬆️ Update ghcr.io/hassio-addons/base Docker tag to v21.0.4 
-- ⬆️ Update ghcr.io/hassio-addons/base Docker tag to v21.0.3 (#12)
-
-Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com> 
+⬆️ Update go APK package to v1.26.8-r0 
+- ⬆️ Update go APK package to v1.26.8-r0 
+- fix apk versioning 
+- use apk versioning for alpine repository 
