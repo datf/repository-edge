@@ -1,4 +1,3 @@
-# Changelog since v1.0.2
-- Revert "fix: Give plex access to LAN to allow for local playback"
-
-This reverts commit a8f31b8c371737f7480a7d2fa4cdb9cac6bfe9dd. 
+# Changelog since v1.0.3
+- Merge branch 'hassio-addons:main' into main 
+- ⬆️ Update plexmediaserver to v1.43.4.10903-e5521bd8c (#305) 
