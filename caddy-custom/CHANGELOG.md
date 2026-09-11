@@ -1,4 +1,5 @@
 # Changelog since v1.0.5
+- removed unnecesary renovate datasource 
 - Merge pull request #14 from datf/renovate/app-base-image
 
 ⬆️ Update ghcr.io/hassio-addons/base Docker tag to v21.0.5 
