@@ -1,9 +1,4 @@
-# Changelog since v2.0.1
-- Merge pull request #6 from datf/renovate/app-base-image
+# Changelog since v2.0.2
+- ⬆️ Update ghcr.io/hassio-addons/base Docker tag to v21.0.5 (#7)
 
-⬆️ Update ghcr.io/hassio-addons/base Docker tag to v21.0.4 
-- ⬆️ Update ghcr.io/hassio-addons/base Docker tag to v21.0.4 
-- Merge pull request #5 from datf/renovate/app-base-image
-
-⬆️ Update ghcr.io/hassio-addons/base Docker tag to v21.0.3 
-- ⬆️ Update ghcr.io/hassio-addons/base Docker tag to v21.0.3 
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com> 
