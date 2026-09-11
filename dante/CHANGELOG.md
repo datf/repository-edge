@@ -1,2 +1,2 @@
-# Changelog since v2.0.3
-- use apk versioning for alpine repository 
+# Changelog since v2.0.4
+- removed unnecesary renovate datasource 
