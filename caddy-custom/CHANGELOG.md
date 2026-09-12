@@ -1,4 +1,7 @@
 # Changelog since v1.0.5
+- rebuilding custom caddy if new go version detected 
+- rebuild custom caddy if newer caddy version upstream 
+- check plugin version on startup 
 - removed unnecesary renovate datasource 
 - Merge pull request #14 from datf/renovate/app-base-image
 
