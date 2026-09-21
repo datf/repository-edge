@@ -1,5 +1,5 @@
 name: Caddy Custom
-version: 941a3fc
+version: e2c40c0
 slug: caddy-custom
 description: Cusomizable caddy server
 url: https://github.com/datf/hassio-caddy-custom
@@ -18,7 +18,7 @@ options:
   log_level: info
 schema:
   plugins:
-  - match(^github\.com/.*)
+  - match(^([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(:\d+)?/.*)
   args:
   - str
   env_vars:
