@@ -1,5 +1,5 @@
 name: Dante
-version: af10569
+version: 41d5f82
 slug: dante
 description: SOCKS proxy server
 url: https://github.com/datf/app-dante
