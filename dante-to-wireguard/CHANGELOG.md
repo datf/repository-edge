@@ -1,8 +1,4 @@
-# Changelog since v1.1.1
-- Merge remote-tracking branch 'refs/remotes/origin/master' 
-- removed unnecesary renovate datasource 
-- Merge pull request #6 from datf/renovate/app-base-image
+# Changelog since v1.1.2
+- ⬆️ Update ghcr.io/datf/dante Docker tag to v2.0.5 (#7)
 
-⬆️ Update ghcr.io/datf/dante Docker tag to v2.0.4 
-- ⬆️ Update ghcr.io/datf/dante Docker tag to v2.0.4 
-- use apk versioning for alpine repository 
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com> 
