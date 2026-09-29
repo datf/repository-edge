@@ -1,5 +1,5 @@
 name: Caddy Custom
-version: aef3776
+version: efd08bd
 slug: caddy-custom
 description: Cusomizable caddy server
 url: https://github.com/datf/hassio-caddy-custom
@@ -11,6 +11,7 @@ host_network: true
 map:
 - addon_config:rw
 - ssl:rw
+- share
 options:
   args: []
   env_vars: []
