@@ -1,4 +1,5 @@
-# Changelog since v1.1.3
-- ⬆️ Update ghcr.io/datf/dante Docker tag to v2.0.6 (#8)
+# Changelog since v1.1.4
+- Merge pull request #9 from datf/renovate/app-base-image
 
-Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com> 
+⬆️ Update ghcr.io/datf/dante Docker tag to v2.0.7 
+- ⬆️ Update ghcr.io/datf/dante Docker tag to v2.0.7 
