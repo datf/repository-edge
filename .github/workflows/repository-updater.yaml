@@ -20,7 +20,7 @@ jobs:
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Run repository updater
-        uses: datf/repository-updater@d23de009daf7d0327ddeb215dbbda28a5f461365
+        uses: datf/repository-updater@f2b0624a4b0340ce052f20f5cba4cda0dfeb27cd
         with:
           app: ${{ github.event.client_payload.app }}
           repository: ${{ github.repository }}
