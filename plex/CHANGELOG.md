@@ -1,6 +1,5 @@
-# Changelog since v1.0.6
-- Merge branch 'hassio-addons:main' into main 
-- ⬆️ Update ghcr.io/hassio-addons/debian-base Docker tag to v9.5.0 (#9)
+# Changelog since v1.0.7
+- Merge pull request #10 from datf/renovate/plexmediaserver-1.x
 
-Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com> 
-- ⬆️ Update ghcr.io/hassio-addons/debian-base Docker tag to v9.5.0 (#308) 
+⬆️ Update plexmediaserver to v1.43.5.11029-6bf8af3f0 
+- ⬆️ Update plexmediaserver to v1.43.5.11029-6bf8af3f0 
