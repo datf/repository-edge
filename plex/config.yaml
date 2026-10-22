@@ -1,5 +1,5 @@
 name: Plex Media Server
-version: cc64c12
+version: d740559
 slug: plex
 description: Recorded media, live TV, online news, and podcasts ready to stream.
 url: https://github.com/hassio-addons/app-plex
