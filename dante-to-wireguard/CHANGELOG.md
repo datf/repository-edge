@@ -1,5 +1,5 @@
-# Changelog since v1.1.4
-- Merge pull request #9 from datf/renovate/app-base-image
+# Changelog since v1.1.5
+- Merge pull request #10 from datf/renovate/hassio-addons-workflows-5.x
 
-⬆️ Update ghcr.io/datf/dante Docker tag to v2.0.7 
-- ⬆️ Update ghcr.io/datf/dante Docker tag to v2.0.7 
+⬆️ Update hassio-addons/workflows action to v5 
+- ⬆️ Update hassio-addons/workflows action to v5 
