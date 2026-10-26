@@ -1,12 +1,5 @@
-# Changelog since v1.0.8
-- Merge branch 'hassio-addons:main' into main 
-- ⬆️ Update ghcr.io/hassio-addons/debian-base Docker tag to v9.5.1 (#311) 
-- ⬆️ Update hassio-addons/workflows action to v5 (#312) 
-- Merge pull request #12 from datf/renovate/hassio-addons-workflows-5.x
+# Changelog since v1.0.9
+- Merge pull request #13 from datf/renovate/plexmediaserver-1.x
 
-⬆️ Update hassio-addons/workflows action to v5 
-- ⬆️ Update hassio-addons/workflows action to v5 
-- Merge pull request #11 from datf/renovate/app-base-image
-
-⬆️ Update ghcr.io/hassio-addons/debian-base Docker tag to v9.5.1 
-- ⬆️ Update ghcr.io/hassio-addons/debian-base Docker tag to v9.5.1 
+⬆️ Update plexmediaserver to v1.43.5.11079-b3b13e506 
+- ⬆️ Update plexmediaserver to v1.43.5.11079-b3b13e506 
