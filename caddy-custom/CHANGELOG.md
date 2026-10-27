@@ -1,5 +1,5 @@
-# Changelog since v1.1.4
-- Merge pull request #24 from datf/renovate/go-1.x
+# Changelog since v1.1.5
+- Merge pull request #25 from datf/renovate/app-base-image
 
-⬆️ Update go APK package to v1.26.10-r0 
-- ⬆️ Update go APK package to v1.26.10-r0 
+⬆️ Update ghcr.io/hassio-addons/base Docker tag to v21.0.10 
+- ⬆️ Update ghcr.io/hassio-addons/base Docker tag to v21.0.10 
