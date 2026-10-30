@@ -13,14 +13,16 @@ jobs:
   updater:
     name: Updater for ${{ github.event.client_payload.app }}
     runs-on: ubuntu-latest
+    concurrency:
+      group: repository-updater
+      cancel-in-progress: false
     steps:
       - name: Configure Git Author
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
       - name: Run repository updater
-        uses: datf/repository-updater@1070b9f07b90f1b8a43f12aa7e2881b50925aa46
+        uses: hassio-addons/repository-updater@v3.0.0
         with:
           app: ${{ github.event.client_payload.app }}
           repository: ${{ github.repository }}
