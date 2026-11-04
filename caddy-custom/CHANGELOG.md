@@ -1,5 +1,5 @@
-# Changelog since v1.1.5
-- Merge pull request #25 from datf/renovate/app-base-image
+# Changelog since v1.1.6
+- Merge pull request #26 from datf/renovate/caddyserver-caddy-2.x
 
-⬆️ Update ghcr.io/hassio-addons/base Docker tag to v21.0.10 
-- ⬆️ Update ghcr.io/hassio-addons/base Docker tag to v21.0.10 
+⬆️ Update caddyserver/caddy to v2.11.8 
+- ⬆️ Update caddyserver/caddy to v2.11.8 
