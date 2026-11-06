@@ -8,7 +8,7 @@ apps:
   caddy-custom:
     repository: datf/app-crowdsec
     target: crowdsec
-    image: ghcr.io/datf/app-crowdsec
+    image: ghcr.io/datf/crowdsec
   dante:
     repository: datf/app-dante
     target: dante
