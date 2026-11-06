@@ -5,6 +5,10 @@ apps:
     repository: datf/hassio-caddy-custom
     target: caddy-custom
     image: ghcr.io/datf/caddy-custom
+  caddy-custom:
+    repository: datf/app-crowdsec
+    target: crowdsec
+    image: ghcr.io/datf/app-crowdsec
   dante:
     repository: datf/app-dante
     target: dante
