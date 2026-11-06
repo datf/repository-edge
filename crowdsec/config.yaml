@@ -1,0 +1,67 @@
+name: Crowdsec
+version: 7158be7
+slug: crowdsec
+description: CrowdSec - the open-source and participative IPS
+url: https://github.com/datf/app-crowdsec
+arch:
+- amd64
+- aarch64
+init: false
+startup: services
+journald: true
+ports:
+  8080/tcp: null
+  6060/tcp: null
+ports_description:
+  8080/tcp: CrowdSec Local API
+  6060/tcp: Prometheus endpoint
+map:
+- addon_config:rw
+options:
+  log_level: info
+  enable_local_api: true
+  enable_online_api: false
+  enable_prometheus: false
+  agent_username: ''
+  agent_password: ''
+  trusted_ips:
+  - 127.0.0.1
+  - ::1
+  agents_allowed_ou:
+  - agents_ou
+  bouncers_allowed_ou:
+  - bouncers_ou
+  collections:
+  - crowdsecurity/home-assistant
+  parsers: []
+  scenarios: []
+  postoverflows: []
+  parsers_to_disable:
+  - crowdsecurity/whitelists
+  scenarios_to_disable: []
+schema:
+  log_level: list(trace|debug|info|error)
+  enable_local_api: bool
+  enable_online_api: bool
+  enable_prometheus: bool
+  trusted_ips:
+  - str
+  agents_allowed_ou:
+  - str?
+  bouncers_allowed_ou:
+  - str?
+  agent_username: str
+  agent_password: str
+  collections:
+  - str?
+  parsers:
+  - str?
+  scenarios:
+  - str?
+  postoverflows:
+  - str?
+  parsers_to_disable:
+  - str?
+  scenarios_to_disable:
+  - str?
+image: ghcr.io/datf/crowdsec
