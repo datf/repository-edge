@@ -1,0 +1,47 @@
+---
+configuration:
+  log_level:
+    name: Log level
+    description: Detail level for add-on logs. Use Info for normal operation, Debug for troubleshooting.
+  enable_local_api:
+    name: Enable Local API
+    description: Runs the local CrowdSec API (LAPI) to process alerts and manage bouncers.
+  enable_online_api:
+    name: Enable Central API
+    description: Connects to CrowdSec Central API to download community blocklists and share consensus signals.
+  enable_prometheus:
+    name: Enable metrics
+    description: Exposes Prometheus metrics on port 6060 and enables the cscli metrics command.
+  trusted_ips:
+    name: Trusted IPs
+    description: IP addresses or subnets allowed to access the Local API as admins.
+  agents_allowed_ou:
+    name: Agents allowed TLS OU
+    description: Organizational Units (OU) allowed in client TLS certificates for connecting agents.
+  bouncers_allowed_ou:
+    name: Bouncers allowed TLS OU
+    description: Organizational Units (OU) allowed in client TLS certificates for connecting bouncers.
+  agent_username:
+    name: External agent username
+    description: Username to pre-register an external CrowdSec agent for the Local API.
+  agent_password:
+    name: External agent password
+    description: Password to pre-register an external CrowdSec agent for the Local API.
+  collections:
+    name: Collections
+    description: Hub collections to install, bundling parsers and scenarios.
+  parsers:
+    name: Additional parsers
+    description: Extra CrowdSec Hub parsers to install for normalizing specific log types.
+  scenarios:
+    name: Additional scenarios
+    description: Extra CrowdSec Hub scenarios to install for detecting specific attack patterns.
+  postoverflows:
+    name: Postoverflows
+    description: Post-detection processors for extra whitelisting, filtering, or alert enrichment.
+  parsers_to_disable:
+    name: Parsers to disable
+    description: Installed parsers to deactivate or remove.
+  scenarios_to_disable:
+    name: Scenarios to disable
+    description: Installed detection scenarios to deactivate or remove.
