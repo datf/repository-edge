@@ -1,5 +1,5 @@
-# Changelog since v1.1.6
-- Merge pull request #12 from datf/renovate/app-base-image
+## What’s changed
 
-⬆️ Update ghcr.io/datf/dante Docker tag to v2.0.9 
-- ⬆️ Update ghcr.io/datf/dante Docker tag to v2.0.9 
+## ⬆️ Dependency updates
+
+- ⬆️ Update ghcr.io/datf/dante Docker tag to v2.0.10 @[renovate[bot]](https://github.com/apps/renovate) ([#13](https://github.com/datf/app-dante-to-wireguard/pull/13))
