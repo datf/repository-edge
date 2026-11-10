@@ -15,5 +15,5 @@ configuration:
     name: Caddy plugins
     description: >-
       Plugins to compile caddy with.
-      Must be in the format "github.com/USER/REPOSITORY" or "github.com/USER/REPOSITORY@VERSION".
+      Format: "github.com/USER/REPOSITORY", "github.com/USER/REPOSITORY@VERSION", or replacement "ORIGINAL_MODULE=REPLACEMENT[@VERSION]".
       Check the logs after restarting the app.
