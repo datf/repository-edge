@@ -1,2 +1,2 @@
-# Changelog since v1.2.2
-- feature: support submodules and overrides for plugins 
+# Changelog since v1.3.0
+- fix deprecation warning on start-up 
