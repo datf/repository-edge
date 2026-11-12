@@ -1,2 +1,3 @@
-# Changelog since v1.3.0
-- fix deprecation warning on start-up 
+# Changelog since v1.3.1
+- prettier fixes 
+- Updated README and documentation 
