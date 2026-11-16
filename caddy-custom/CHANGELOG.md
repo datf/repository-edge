@@ -1,4 +1,5 @@
-# Changelog since v1.3.2
-- ⬆️ Update go APK package to v1.26.11-r0 (#29)
+# Changelog since v1.3.3
+- Merge pull request #30 from datf/renovate/nss-tools-3.x
 
-Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com> 
+⬆️ Update nss-tools APK package to v3.133-r0 
+- ⬆️ Update nss-tools APK package to v3.133-r0 
