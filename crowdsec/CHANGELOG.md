@@ -1,1 +1,1 @@
-- configure central API credentials file location
+- prettier fixes
