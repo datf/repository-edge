@@ -1,5 +1,5 @@
 name: Crowdsec
-version: edf7306
+version: 44e2c9e
 slug: crowdsec
 description: CrowdSec - the open-source and participative IPS
 url: https://github.com/datf/app-crowdsec

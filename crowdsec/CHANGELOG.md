@@ -1,1 +1,1 @@
-- prettier fixes
+- updated README and DOCS

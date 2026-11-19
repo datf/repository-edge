@@ -92,8 +92,8 @@ To enable CrowdSec to read Caddy's access logs directly from `systemd-journald`:
 1. From your Home Assistant terminal, create the acquisition directory and configuration file:
 
 ```bash
-homeassistant$ mkdir -p /config/.storage/etc/crowdsec/acquis.d
-homeassistant$ nano /config/.storage/etc/crowdsec/acquis.d/caddy.yaml
+homeassistant$ mkdir -p /addon_configs/91f8a72d_crowdsec/.storage/etc/crowdsec/acquis.d
+homeassistant$ nano /addon_configs/91f8a72d_crowdsec/.storage/etc/crowdsec/acquis.d/caddy.yaml
 ```
 
 2. Paste the following configuration:
@@ -255,14 +255,14 @@ When **Enable Central API** (`enable_online_api: true`) is toggled on in the add
 You can enroll your Home Assistant CrowdSec instance into the free [CrowdSec Console](https://app.crowdsec.net):
 
 1. Register an account at [app.crowdsec.net](https://app.crowdsec.net).
-2. Go to **Security Engines** -> **Enroll Engine** and copy your enrollment key.
+2. Go to **Security** -> **Engines** -> **Enroll command** and copy your enrollment key.
 3. In the CrowdSec container shell, run:
 
 ```bash
 crowdsec# cscli console enroll <YOUR_ENROLLMENT_KEY>
 ```
 
-4. Restart the CrowdSec add-on, then approve the enrollment request in the web Console.
+4. Approve the enrollment request in the web Console and then restart CrowdSec.
 5. In the Console under **Blocklists**, subscribe to specialized blocklists (e.g., Tor exit nodes, open proxies, VPNs, malware droppers, VoIP scanners). These lists automatically synchronize to your Local API and are enforced by Caddy.
 
 ---
@@ -278,8 +278,8 @@ IP blocking blocks repeat offenders and known bad IPs. CrowdSec's **AppSec Compo
 From your Home Assistant terminal, create the AppSec acquisition file:
 
 ```bash
-homeassistant$ mkdir -p /config/.storage/etc/crowdsec/acquis.d
-homeassistant$ nano /config/.storage/etc/crowdsec/acquis.d/appsec.yaml
+homeassistant$ mkdir -p /addon_configs/91f8a72d_crowdsec/.storage/etc/crowdsec/acquis.d
+homeassistant$ nano /addon_configs/91f8a72d_crowdsec/.storage/etc/crowdsec/acquis.d/appsec.yaml
 ```
 
 Add the following configuration:
