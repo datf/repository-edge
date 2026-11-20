@@ -45,3 +45,7 @@ configuration:
   scenarios_to_disable:
     name: Scenarios to disable
     description: Installed detection scenarios to deactivate or remove.
+network:
+  8080/tcp: CrowdSec Local API
+  6060/tcp: Metrics endpoint
+  7422/tcp: AppSec endpoint

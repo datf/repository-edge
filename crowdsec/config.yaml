@@ -1,5 +1,5 @@
 name: Crowdsec
-version: 44e2c9e
+version: dc18ca7
 slug: crowdsec
 description: CrowdSec - the open-source and participative IPS
 url: https://github.com/datf/app-crowdsec
@@ -13,12 +13,9 @@ ports:
   8080/tcp: null
   6060/tcp: null
   7422/tcp: null
-ports_description:
-  8080/tcp: CrowdSec Local API
-  6060/tcp: Prometheus endpoint
-  7422/tcp: AppSec endpoint
 map:
-- addon_config:rw
+- type: app_config
+  read_only: false
 options:
   log_level: info
   enable_local_api: true
