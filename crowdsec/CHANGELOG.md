@@ -1,4 +1,5 @@
 # Changelog since v0.0.1
+- updated DOCS to match new config location 
 - Updated internal configuration
 
 Set hostname to the app container's name and fixed data and config path 

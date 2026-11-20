@@ -92,8 +92,8 @@ To enable CrowdSec to read Caddy's access logs directly from `systemd-journald`:
 1. From your Home Assistant terminal, create the acquisition directory and configuration file:
 
 ```bash
-homeassistant$ mkdir -p /addon_configs/91f8a72d_crowdsec/.storage/etc/crowdsec/acquis.d
-homeassistant$ nano /addon_configs/91f8a72d_crowdsec/.storage/etc/crowdsec/acquis.d/caddy.yaml
+homeassistant$ mkdir -p /addon_configs/91f8a72d_crowdsec/acquis.d
+homeassistant$ nano /addon_configs/91f8a72d_crowdsec/acquis.d/caddy.yaml
 ```
 
 2. Paste the following configuration:
@@ -278,8 +278,8 @@ IP blocking blocks repeat offenders and known bad IPs. CrowdSec's **AppSec Compo
 From your Home Assistant terminal, create the AppSec acquisition file:
 
 ```bash
-homeassistant$ mkdir -p /addon_configs/91f8a72d_crowdsec/.storage/etc/crowdsec/acquis.d
-homeassistant$ nano /addon_configs/91f8a72d_crowdsec/.storage/etc/crowdsec/acquis.d/appsec.yaml
+homeassistant$ mkdir -p /addon_configs/91f8a72d_crowdsec/acquis.d
+homeassistant$ nano /addon_configs/91f8a72d_crowdsec/acquis.d/appsec.yaml
 ```
 
 Add the following configuration:
