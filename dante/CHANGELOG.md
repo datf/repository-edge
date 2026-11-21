@@ -1,4 +1,5 @@
-# Changelog since v2.0.10
-- Modernized config and docs
+# Changelog since v2.0.11
+- Merge pull request #15 from datf/renovate/migrate-config
 
-Using "app" instead of "add-on" and updated config accordingly. 
+⬆️: migrate Renovate config 
+- ⬆️: migrate config .github/renovate.json 
