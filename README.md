@@ -108,5 +108,6 @@ based on the following:
 [app-doc-plex]: https://github.com/datf/app-plex/blob/72e3f13/README.md
 [plex-issue]: https://github.com/datf/app-plex/issues
 [plex-version-shield]: https://img.shields.io/badge/version-72e3f13-blue.svg
+[semver]: http://semver.org/spec/v2.0.0.html
 [add-repo-badge]: https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg
 [add-repo-link]: https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fdatf%2Frepository-edge
