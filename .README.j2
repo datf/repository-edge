@@ -21,18 +21,23 @@ If you are more interested in stable releases of these add-ons:
 
 ## Installation
 
-Use the following URL to add this repository to your Home Assistant:
+Click the button below to add this repository to your Home Assistant:
 
-```txt
-{{ repo }}
-```
+[![Open your Home Assistant instance and show the add app repository dialog with a specific repository URL pre-filled.][add-repo-badge]][add-repo-link]
+
 
 ## Apps provided by this repository
 
-{% for addon in addons %}
-### &#10003; {{ addon.name }}
+{% for app in apps %}
+### &#10003; [{{ app.name }}][app-{{ app.target }}]
 
-{{ addon.description }}
+![Latest Version][{{ app.target }}-version-shield]
+
+{{ app.description }}
+
+[:books: {{ app.name }} app documentation][app-doc-{{ app.target }}]
+
+[:bug: Report issues for the app: {{ app.name }}][{{ app.target }}-issue]
 
 {% endfor %}
 ## Releases
@@ -44,3 +49,12 @@ based on the following:
 - ``MAJOR``: Incompatible or major changes.
 - ``MINOR``: Backwards-compatible new features and enhancements.
 - ``PATCH``: Backwards-compatible bugfixes and package updates.
+
+{% for app in apps %}
+[app-{{ app.target }}]: {{ app.repo }}/tree/{{ app.version }}
+[app-doc-{{ app.target}}]: {{ app.repo }}/blob/{{ app.version }}/README.md
+[{{ app.target }}-issue]: {{ app.repo }}/issues
+[{{ app.target }}-version-shield]: https://img.shields.io/badge/version-{{ app.version }}-blue.svg
+{% endfor %}
+[add-repo-badge]: https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg
+[add-repo-link]: https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?{{ {'repository_url': repo} | urlencode }}
