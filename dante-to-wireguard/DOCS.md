@@ -1,8 +1,8 @@
-# Home Assistant Community Add-on: Dante to WireGuard
+# Home Assistant Community App: Dante to WireGuard
 
-Welcome to the Dante to WireGuard add-on for Home Assistant!
+Welcome to the Dante to WireGuard app for Home Assistant!
 
-This add-on combines Dante, a robust and flexible SOCKS proxy server (supporting SOCKS4 and SOCKS5), with a WireGuard VPN client. This allows you to run a SOCKS proxy directly on your Home Assistant instance that automatically routes all its outgoing traffic through a WireGuard VPN connection. You can easily route traffic from other devices or networks securely through the VPN without needing to install VPN clients on every device.
+This app combines Dante, a robust and flexible SOCKS proxy server (supporting SOCKS4 and SOCKS5), with a WireGuard VPN client. This allows you to run a SOCKS proxy directly on your Home Assistant instance that automatically routes all its outgoing traffic through a WireGuard VPN connection. You can easily route traffic from other devices or networks securely through the VPN without needing to install VPN clients on every device.
 
 > [!WARNING]
 > By default, the Dante configuration allows all traffic through the local `1080` port without authentication.
@@ -10,26 +10,22 @@ This add-on combines Dante, a robust and flexible SOCKS proxy server (supporting
 
 ## Installation
 
-This add-on is currently a custom add-on. You will need to add a custom repository to install it:
+This app is currently a custom add-on. You will need to add a custom repository to install it:
 
-1. Navigate in your Home Assistant UI to **Settings** -> **Add-ons** -> **Add-on Store**.
-2. Click on the three dots (⋮) in the top right corner and select **Repositories**.
-3. Add the following repository URL: `https://github.com/datf/hassio-addons`
-4. Click **Add** and wait for the repository to load.
-5. Close the repositories dialog and reload the page if needed.
-6. Scroll down to find the new repository and click on the **Dante to WireGuard** add-on.
-7. Click **Install**.
-8. Place your WireGuard configuration file(s) (e.g., `wg0.conf`) in the add-on's `/config` directory.
-9. Start the add-on.
-10. Check the logs of the add-on to ensure it started properly and there are no errors.
+1. Follow [this link](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fdatf%2Fhassio-addons) to add the repository and click Add.
+2. Scroll down to find the new repository and click on the **Dante to WireGuard** app.
+3. Click **Install**.
+4. Place your WireGuard configuration file(s) (e.g., `wg0.conf`) in the app's `/config` directory.
+5. Start the app.
+6. Check the logs of the app to ensure it started properly and there are no errors.
 
-That's it! The add-on should work right out of the box, provided port `1080` is not already in use by another service on your host and you have provided a valid WireGuard configuration.
+That's it! The app should work right out of the box, provided port `1080` is not already in use by another service on your host and you have provided a valid WireGuard configuration.
 
 ## Configuration
 
-**Note**: _Remember to restart the add-on whenever you change the configuration for the changes to take effect._
+**Note**: _Remember to restart the app whenever you change the configuration for the changes to take effect._
 
-Here is an example add-on configuration:
+Here is an example app configuration:
 
 ```yaml
 log_level: info
@@ -42,7 +38,7 @@ mtu: 1280
 
 ### Option: `log_level`
 
-The `log_level` option controls the level of log output by the add-on. You can change this to be more or less verbose, which is especially helpful when you are troubleshooting an issue.
+The `log_level` option controls the level of log output by the app. You can change this to be more or less verbose, which is especially helpful when you are troubleshooting an issue.
 
 Possible values are:
 
@@ -52,7 +48,7 @@ Possible values are:
 - `notice`: Normal but significant events.
 - `warning`: Exceptional occurrences that are not errors.
 - `error`: Runtime errors that do not require immediate action.
-- `fatal`: Something went terribly wrong. Add-on becomes unusable.
+- `fatal`: Something went terribly wrong. App becomes unusable.
 
 By default, this is set to `info`, which is the recommended setting for daily use.
 
@@ -60,7 +56,7 @@ By default, this is set to `info`, which is the recommended setting for daily us
 
 Set this to `true` if you want to require SOCKS clients to authenticate with a username and password before they can use the proxy.
 
-When enabled, the add-on will automatically create a user on the system level (based on your `credentials` settings below) so that Dante can authenticate against it.
+When enabled, the app will automatically create a user on the system level (based on your `credentials` settings below) so that Dante can authenticate against it.
 
 > [!WARNING]
 > Standard SOCKS5 username/password authentication is **sent in cleartext** (unencrypted). Anyone intercepting your traffic on your local network can see the username and password.
@@ -80,22 +76,22 @@ Lowering the MTU prevents this issue. 1280 is the safest default, but you can tr
 
 ## WireGuard Configuration
 
-To connect to a VPN, you must provide a valid WireGuard configuration file. Place your configuration file (e.g., `wg0.conf`) in the add-on's `/config` directory.
+To connect to a VPN, you must provide a valid WireGuard configuration file. Place your configuration file (e.g., `wg0.conf`) in the app's `/config` directory.
 
 ### Multiple Configurations (Rotation)
 
 If you have multiple WireGuard configurations (for example, to connect to different servers for load balancing or to evade bans), you can simply place them all in your `/config` directory (e.g. `wg0.conf`, `wg1.conf`, `wg2.conf`).
 
-On every start/restart of the add-on, it will automatically select the next configuration file in alphabetical sequence. This makes it easy to rotate servers by just restarting the add-on.
+On every start/restart of the app, it will automatically select the next configuration file in alphabetical sequence. This makes it easy to rotate servers by just restarting the app.
 
 ## Advanced Configuration (`sockd.conf`)
 
-By default, the add-on provides a configuration that allows all local traffic and routes it through the `wg0` interface. However, if you want to customize how Dante behaves—for example, enforcing username authentication or setting specific routing rules—you need to provide your own `sockd.conf` file.
+By default, the app provides a configuration that allows all local traffic and routes it through the `wg0` interface. However, if you want to customize how Dante behaves—for example, enforcing username authentication or setting specific routing rules—you need to provide your own `sockd.conf` file.
 
 You can do this by creating a `sockd.conf` file in the **`addon_config` directory for Dante to WireGuard**. (Note: the exact folder name inside `addon_config` might have a unique repository ID prefix).
 
 > [!IMPORTANT]
-> **Network Interfaces (`external`):** In the examples below, the external interface is set to `wg0`. Because this add-on forces all proxy traffic through WireGuard, **your external interface MUST be `wg0`**. If you change this to `eth0` or `end0`, your proxy traffic will bypass the VPN and leak your real IP address!
+> **Network Interfaces (`external`):** In the examples below, the external interface is set to `wg0`. Because this app forces all proxy traffic through WireGuard, **your external interface MUST be `wg0`**. If you change this to `eth0` or `end0`, your proxy traffic will bypass the VPN and leak your real IP address!
 
 ### Basic Example (`sockd.conf`)
 
@@ -125,7 +121,7 @@ socks pass {
 
 ### Example with Authentication
 
-If you set `require_username_auth: true` in the add-on configuration, you **must** also configure Dante to require the `username` method in your `sockd.conf`.
+If you set `require_username_auth: true` in the app configuration, you **must** also configure Dante to require the `username` method in your `sockd.conf`.
 
 Modify the `socksmethod` line like this:
 

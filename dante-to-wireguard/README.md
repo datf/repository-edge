@@ -1,10 +1,10 @@
-# Home Assistant Add-on: Dante over Wireguard
+# Home Assistant App: Dante over Wireguard
 
-Dante is a secure, circuit-level SOCKS client and server that provides a robust proxy solution. WireGuard is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. This add-on combines them, using Wireguard to make a VPN the exit node/interface for the proxy.
+Dante is a secure, circuit-level SOCKS client and server that provides a robust proxy solution. WireGuard is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. This app combines them, using Wireguard to make a VPN the exit node/interface for the proxy.
 
 ## About
 
-This add-on allows you to run a Dante SOCKS proxy server locally within your network that routes its outbound traffic through a Wireguard VPN. By running this as a Home Assistant add-on, you can securely route network traffic through your local environment and exit out via the VPN.
+This app allows you to run a Dante SOCKS proxy server locally within your network that routes its outbound traffic through a Wireguard VPN. By running this as a Home Assistant app, you can securely route network traffic through your local environment and exit out via the VPN.
 
 ## WARNING! THIS IS AN EDGE VERSION!
 
@@ -21,7 +21,7 @@ This repository was created for:
 - Anybody interested in trying out upcoming apps or app features.
 - Developers.
 
-If you are more interested in stable releases of these add-ons:
+If you are more interested in stable releases of these apps:
 
 <https://github.com/datf/hassio-addons>
 

@@ -3,11 +3,11 @@ configuration:
   log_level:
     name: Log Level
     description: >-
-      The log_level option controls the level of log output by the add-on and can be changed to be more or less verbose, which might be useful when you are dealing with an unknown issue.
+      The log_level option controls the level of log output by the app and can be changed to be more or less verbose, which might be useful when you are dealing with an unknown issue.
   require_username_auth:
     name: Require Username Authentication
     description: >-
-      Set this to true if you want to require SOCKS clients to authenticate with a username and password. When enabled, the add-on system will automatically create the user so that Dante can authenticate against it. Warning: Standard SOCKS5 username/password authentication is sent in cleartext (unencrypted).
+      Set this to true if you want to require SOCKS clients to authenticate with a username and password. When enabled, the app system will automatically create the user so that Dante can authenticate against it. Warning: Standard SOCKS5 username/password authentication is sent in cleartext (unencrypted).
   credentials:
     name: Credentials
     description: >-
@@ -25,3 +25,6 @@ configuration:
     name: MTU
     description: >-
       The MTU (Maximum Transmission Unit) value for the WireGuard interface. WireGuard adds encryption overhead to your traffic. If this is set too high (e.g., 1500), packets will exceed physical network limits and get silently dropped, causing connection stalls. Lowering the MTU prevents this issue. 1280 is the safest default, but you can try 1400 for better performance. This explicitly overrides any MTU specified in your WireGuard configuration files.
+network:
+  1080/tcp: SOCKS proxy TCP
+  1080/udp: SOCKS proxy UDP

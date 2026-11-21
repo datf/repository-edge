@@ -100,10 +100,10 @@ based on the following:
 [app-doc-dante]: https://github.com/datf/app-dante/blob/1a6888f/README.md
 [dante-issue]: https://github.com/datf/app-dante/issues
 [dante-version-shield]: https://img.shields.io/badge/version-1a6888f-blue.svg
-[app-dante-to-wireguard]: https://github.com/datf/app-dante-to-wireguard/tree/663c1be
-[app-doc-dante-to-wireguard]: https://github.com/datf/app-dante-to-wireguard/blob/663c1be/README.md
+[app-dante-to-wireguard]: https://github.com/datf/app-dante-to-wireguard/tree/3c77df9
+[app-doc-dante-to-wireguard]: https://github.com/datf/app-dante-to-wireguard/blob/3c77df9/README.md
 [dante-to-wireguard-issue]: https://github.com/datf/app-dante-to-wireguard/issues
-[dante-to-wireguard-version-shield]: https://img.shields.io/badge/version-663c1be-blue.svg
+[dante-to-wireguard-version-shield]: https://img.shields.io/badge/version-3c77df9-blue.svg
 [app-plex]: https://github.com/datf/app-plex/tree/72e3f13
 [app-doc-plex]: https://github.com/datf/app-plex/blob/72e3f13/README.md
 [plex-issue]: https://github.com/datf/app-plex/issues
