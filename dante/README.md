@@ -1,10 +1,10 @@
-# Home Assistant Add-on: Dante
+# Home Assistant App: Dante
 
 Dante is a secure, circuit-level SOCKS client and server that provides a robust proxy solution.
 
 ## About
 
-This add-on allows you to run a Dante SOCKS proxy server locally within your network. By running Dante as a Home Assistant add-on, you can securely route and manage network traffic through your local environment.
+This app allows you to run a Dante SOCKS proxy server locally within your network. By running Dante as a Home Assistant app, you can securely route and manage network traffic through your local environment.
 
 ## WARNING! THIS IS AN EDGE VERSION!
 
@@ -21,7 +21,7 @@ This repository was created for:
 - Anybody interested in trying out upcoming apps or app features.
 - Developers.
 
-If you are more interested in stable releases of these add-ons:
+If you are more interested in stable releases of these apps:
 
 <https://github.com/datf/hassio-addons>
 

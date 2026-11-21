@@ -1,8 +1,8 @@
-# Home Assistant Community Add-on: Dante
+# Home Assistant Community App: Dante
 
-Welcome to the Dante add-on for Home Assistant!
+Welcome to the Dante app for Home Assistant!
 
-Dante is a robust, flexible, and highly reliable SOCKS proxy server (supporting both SOCKS4 and SOCKS5). This add-on allows you to run a SOCKS proxy directly on your Home Assistant. You can easily route traffic from other devices or networks securely through your Home Assistant host.
+Dante is a robust, flexible, and highly reliable SOCKS proxy server (supporting both SOCKS4 and SOCKS5). This app allows you to run a SOCKS proxy directly on your Home Assistant. You can easily route traffic from other devices or networks securely through your Home Assistant host.
 
 > [!WARNING]
 > By default, the Dante configuration allows all traffic through the local `1080` port without authentication.
@@ -10,25 +10,21 @@ Dante is a robust, flexible, and highly reliable SOCKS proxy server (supporting 
 
 ## Installation
 
-This add-on is currently a custom add-on. You will need to add a custom repository to install it:
+This app is currently a custom add-on. You will need to add a custom repository to install it:
 
-1. Navigate in your Home Assistant UI to **Settings** -> **Add-ons** -> **Add-on Store**.
-2. Click on the three dots (⋮) in the top right corner and select **Repositories**.
-3. Add the following repository URL: `https://github.com/datf/hassio-addons`
-4. Click **Add** and wait for the repository to load.
-5. Close the repositories dialog and reload the page if needed.
-6. Scroll down to find the new repository and click on the **Dante** add-on.
-7. Click **Install**.
-8. Start the "Dante" add-on.
-9. Check the logs of the add-on to ensure it started properly and there are no errors.
+1. Follow [this link](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fdatf%2Fhassio-addons) to add the repository and click Add.
+2. Scroll down to find the new repository and click on the **Dante** app.
+3. Click **Install**.
+4. Start the "Dante" app.
+5. Check the logs of the app to ensure it started properly and there are no errors.
 
-That's it! The add-on should work right out of the box, provided port `1080` is not already in use by another service on your host.
+That's it! The app should work right out of the box, provided port `1080` is not already in use by another service on your host.
 
 ## Configuration
 
-**Note**: _Remember to restart the add-on whenever you change the configuration for the changes to take effect._
+**Note**: _Remember to restart the app whenever you change the configuration for the changes to take effect._
 
-Here is an example add-on configuration:
+Here is an example app configuration:
 
 ```yaml
 log_level: info
@@ -40,7 +36,7 @@ credentials:
 
 ### Option: `log_level`
 
-The `log_level` option controls the level of log output by the add-on. You can change this to be more or less verbose, which is especially helpful when you are troubleshooting an issue.
+The `log_level` option controls the level of log output by the app. You can change this to be more or less verbose, which is especially helpful when you are troubleshooting an issue.
 
 Possible values are:
 
@@ -50,7 +46,7 @@ Possible values are:
 - `notice`: Normal but significant events.
 - `warning`: Exceptional occurrences that are not errors.
 - `error`: Runtime errors that do not require immediate action.
-- `fatal`: Something went terribly wrong. Add-on becomes unusable.
+- `fatal`: Something went terribly wrong. App becomes unusable.
 
 By default, this is set to `info`, which is the recommended setting for daily use.
 
@@ -58,7 +54,7 @@ By default, this is set to `info`, which is the recommended setting for daily us
 
 Set this to `true` if you want to require SOCKS clients to authenticate with a username and password before they can use the proxy.
 
-When enabled, the add-on will automatically create a user on the system level (based on your `credentials` settings below) so that Dante can authenticate against it.
+When enabled, the app will automatically create a user on the system level (based on your `credentials` settings below) so that Dante can authenticate against it.
 
 > [!WARNING]
 > Standard SOCKS5 username/password authentication is **sent in cleartext** (unencrypted). Anyone intercepting your traffic on the network can see the username and password. Do not use this over untrusted networks (like public Wi-Fi) unless the connection is wrapped in a secure tunnel, such as a VPN or an SSH tunnel.
@@ -72,7 +68,7 @@ This section defines the user credentials that will be created if `require_usern
 
 ## Advanced Configuration (`sockd.conf`)
 
-By default, the add-on provides a very basic configuration to get you started quickly. However, if you want to customize how Dante behaves—for example, enforcing the username authentication or setting specific routing rules—you need to provide your own `sockd.conf` file.
+By default, the app provides a very basic configuration to get you started quickly. However, if you want to customize how Dante behaves—for example, enforcing the username authentication or setting specific routing rules—you need to provide your own `sockd.conf` file.
 
 You can do this by creating a `sockd.conf` file in the **`addon_config` directory for Dante**. (Note: the exact folder name inside `addon_config` might have a unique repository ID prefix, so just look for the folder belonging to Dante).
 
@@ -83,7 +79,7 @@ You can do this by creating a `sockd.conf` file in the **`addon_config` director
 > - `end0` is common for ARM devices (like the Raspberry Pi).
 > - `wlan0` is common if you are using Wi-Fi as your main network adapter.
 >
-> If the add-on fails to start, check the logs—you might just need to update `eth0` in your configuration to match your system's actual network interface!
+> If the app fails to start, check the logs—you might just need to update `eth0` in your configuration to match your system's actual network interface!
 
 ### Basic Example (`sockd.conf`)
 
@@ -113,7 +109,7 @@ socks pass {
 
 ### Example with Authentication
 
-If you set `require_username_auth: true` in the add-on configuration, you **must** also configure Dante to require the `username` method in your `sockd.conf`.
+If you set `require_username_auth: true` in the app configuration, you **must** also configure Dante to require the `username` method in your `sockd.conf`.
 
 Modify the `socksmethod` line like this:
 

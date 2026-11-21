@@ -1,5 +1,5 @@
 name: Dante
-version: 38f9a8a
+version: 5fc03bd
 slug: dante
 description: SOCKS proxy server
 url: https://github.com/datf/app-dante
@@ -10,11 +10,9 @@ startup: services
 ports:
   1080/tcp: null
   1080/udp: null
-ports_description:
-  1080/tcp: SOCKS proxy TCP
-  1080/udp: SOCKS proxy UDP
 map:
-- addon_config:rw
+- type: app_config
+  read_only: false
 options:
   log_level: info
   require_username_auth: false
