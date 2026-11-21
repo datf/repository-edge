@@ -88,10 +88,10 @@ based on the following:
 - ``MINOR``: Backwards-compatible new features and enhancements.
 - ``PATCH``: Backwards-compatible bugfixes and package updates.
 
-[app-caddy-custom]: https://github.com/datf/hassio-caddy-custom/tree/bfd2fc4
-[app-doc-caddy-custom]: https://github.com/datf/hassio-caddy-custom/blob/bfd2fc4/README.md
+[app-caddy-custom]: https://github.com/datf/hassio-caddy-custom/tree/a4e4c03
+[app-doc-caddy-custom]: https://github.com/datf/hassio-caddy-custom/blob/a4e4c03/README.md
 [caddy-custom-issue]: https://github.com/datf/hassio-caddy-custom/issues
-[caddy-custom-version-shield]: https://img.shields.io/badge/version-bfd2fc4-blue.svg
+[caddy-custom-version-shield]: https://img.shields.io/badge/version-a4e4c03-blue.svg
 [app-crowdsec]: https://github.com/datf/app-crowdsec/tree/593094d
 [app-doc-crowdsec]: https://github.com/datf/app-crowdsec/blob/593094d/README.md
 [crowdsec-issue]: https://github.com/datf/app-crowdsec/issues

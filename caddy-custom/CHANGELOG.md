@@ -1,5 +1,5 @@
-# Changelog since v1.3.3
-- Merge pull request #30 from datf/renovate/nss-tools-3.x
+# Changelog since v1.3.4
+- Merge pull request #31 from datf/renovate/migrate-config
 
-⬆️ Update nss-tools APK package to v3.133-r0 
-- ⬆️ Update nss-tools APK package to v3.133-r0 
+⬆️: migrate Renovate config 
+- ⬆️: migrate config .github/renovate.json 
