@@ -1,6 +1,5 @@
-# Changelog since v0.0.1
-- updated DOCS to match new config location 
-- Updated internal configuration
+# Changelog since v0.1.0
+- Merge pull request #3 from datf/renovate/migrate-config
 
-Set hostname to the app container's name and fixed data and config path 
-- modernized config 
+⬆️: migrate Renovate config 
+- ⬆️: migrate config .github/renovate.json 
