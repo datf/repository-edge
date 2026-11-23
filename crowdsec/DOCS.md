@@ -105,6 +105,7 @@ journalctl_filter:
   - "--directory=/var/log/journal/"
   - "--output=cat"
   - "CONTAINER_NAME=app_91f8a72d_caddy-custom"
+  - "--grep=^\\{.*\\}$"
 labels:
   type: caddy
 ```
