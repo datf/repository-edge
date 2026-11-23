@@ -17,3 +17,8 @@ configuration:
       Plugins to compile caddy with.
       Format: "github.com/USER/REPOSITORY", "github.com/USER/REPOSITORY@VERSION", or replacement "ORIGINAL_MODULE=REPLACEMENT[@VERSION]".
       Check the logs after restarting the app.
+  update_check_interval:
+    name: Update check interval (hours)
+    description: >-
+      How often (in hours) to check for updates to the app, Caddy, and configured plugins.
+      Set to 0 to disable scheduled checks and only check on app startup.

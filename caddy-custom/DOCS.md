@@ -45,6 +45,7 @@ args:
 env_vars:
   - name: CLOUDFLARE_API_TOKEN
     value: "your_cloudflare_api_token"
+update_check_interval: 24
 log_level: info
 ```
 
@@ -100,6 +101,19 @@ env_vars:
   - name: CLOUDFLARE_API_TOKEN
     value: "your_cloudflare_api_token"
 ```
+
+### Option: `update_check_interval`
+
+The interval in hours to check for upstream Caddy updates, Go toolchain updates, plugin version updates, and app updates.
+
+```yaml
+update_check_interval: 24
+```
+
+Set to `0` to disable scheduled checks and only check on app startup. Defaults to `24` hours.
+
+- **Non-blocking background builds:** When Caddy Custom starts, Caddy starts immediately using the existing binary and config. The build process runs in the background. If new plugins or updates are detected, it builds the binary and signals Caddy to restart with the new binary automatically.
+- **Automatic `--resume` fallback:** If you update your `Caddyfile` with directives for newly added plugins before the build has finished, Caddy validates the configuration on startup. If validation fails against the current binary, Caddy automatically falls back to its last known good configuration (`--resume`) so your server stays online while the new plugins compile.
 
 ### Option: `log_level`
 

@@ -32,7 +32,7 @@ Click the button below to add this repository to your Home Assistant:
 
 ![Latest Version][caddy-custom-version-shield]
 
-Cusomizable caddy server
+Customizable Caddy server
 
 [:books: Caddy Custom app documentation][app-doc-caddy-custom]
 
@@ -88,10 +88,10 @@ based on the following:
 - ``MINOR``: Backwards-compatible new features and enhancements.
 - ``PATCH``: Backwards-compatible bugfixes and package updates.
 
-[app-caddy-custom]: https://github.com/datf/hassio-caddy-custom/tree/38066c0
-[app-doc-caddy-custom]: https://github.com/datf/hassio-caddy-custom/blob/38066c0/README.md
+[app-caddy-custom]: https://github.com/datf/hassio-caddy-custom/tree/88ed8bb
+[app-doc-caddy-custom]: https://github.com/datf/hassio-caddy-custom/blob/88ed8bb/README.md
 [caddy-custom-issue]: https://github.com/datf/hassio-caddy-custom/issues
-[caddy-custom-version-shield]: https://img.shields.io/badge/version-38066c0-blue.svg
+[caddy-custom-version-shield]: https://img.shields.io/badge/version-88ed8bb-blue.svg
 [app-crowdsec]: https://github.com/datf/app-crowdsec/tree/3a45ea6
 [app-doc-crowdsec]: https://github.com/datf/app-crowdsec/blob/3a45ea6/README.md
 [crowdsec-issue]: https://github.com/datf/app-crowdsec/issues

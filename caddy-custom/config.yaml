@@ -1,7 +1,7 @@
 name: Caddy Custom
-version: 38066c0
+version: 88ed8bb
 slug: caddy-custom
-description: Cusomizable caddy server
+description: Customizable Caddy server
 url: https://github.com/datf/hassio-caddy-custom
 arch:
 - amd64
@@ -16,6 +16,7 @@ options:
   args: []
   env_vars: []
   plugins: []
+  update_check_interval: 24
   log_level: info
 schema:
   plugins:
@@ -25,6 +26,7 @@ schema:
   env_vars:
   - name: str
     value: str
+  update_check_interval: int(0,)
   log_level: list(trace|debug|info|notice|warning|error|fatal)
 environment:
   LOG_FORMAT: '{LEVEL}: {MESSAGE}'
