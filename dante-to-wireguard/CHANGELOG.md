@@ -1,11 +1,5 @@
-# Changelog since v1.1.8
-- Merge remote-tracking branch 'refs/remotes/origin/master' 
-- Modernized config and docs 
-- Merge pull request #14 from datf/renovate/app-base-image
+# Changelog since v1.1.9
+- Merge pull request #16 from datf/renovate/app-base-image
 
-⬆️ Update ghcr.io/datf/dante Docker tag to v2.0.11 
-- ⬆️ Update ghcr.io/datf/dante Docker tag to v2.0.11 
-- Merge pull request #15 from datf/renovate/migrate-config
-
-⬆️: migrate Renovate config 
-- ⬆️: migrate config .github/renovate.json 
+⬆️ Update ghcr.io/datf/dante Docker tag to v2.0.12 
+- ⬆️ Update ghcr.io/datf/dante Docker tag to v2.0.12 
