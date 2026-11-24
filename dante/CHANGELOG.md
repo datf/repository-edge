@@ -1,6 +1,5 @@
-# Changelog since v2.0.11
-- bugfix: allow s6 to run finish script 
-- Merge pull request #15 from datf/renovate/migrate-config
+# Changelog since v2.0.12
+- Merge pull request #16 from datf/renovate/app-base-image
 
-⬆️: migrate Renovate config 
-- ⬆️: migrate config .github/renovate.json 
+⬆️ Update ghcr.io/hassio-addons/base Docker tag to v21.0.12 
+- ⬆️ Update ghcr.io/hassio-addons/base Docker tag to v21.0.12 
