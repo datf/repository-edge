@@ -92,10 +92,10 @@ based on the following:
 [app-doc-caddy-custom]: https://github.com/datf/hassio-caddy-custom/blob/57c94c3/README.md
 [caddy-custom-issue]: https://github.com/datf/hassio-caddy-custom/issues
 [caddy-custom-version-shield]: https://img.shields.io/badge/version-57c94c3-blue.svg
-[app-crowdsec]: https://github.com/datf/app-crowdsec/tree/7d3d592
-[app-doc-crowdsec]: https://github.com/datf/app-crowdsec/blob/7d3d592/README.md
+[app-crowdsec]: https://github.com/datf/app-crowdsec/tree/0f02127
+[app-doc-crowdsec]: https://github.com/datf/app-crowdsec/blob/0f02127/README.md
 [crowdsec-issue]: https://github.com/datf/app-crowdsec/issues
-[crowdsec-version-shield]: https://img.shields.io/badge/version-7d3d592-blue.svg
+[crowdsec-version-shield]: https://img.shields.io/badge/version-0f02127-blue.svg
 [app-dante]: https://github.com/datf/app-dante/tree/8735ff2
 [app-doc-dante]: https://github.com/datf/app-dante/blob/8735ff2/README.md
 [dante-issue]: https://github.com/datf/app-dante/issues

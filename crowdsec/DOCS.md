@@ -10,18 +10,11 @@ CrowdSec also connects to a decentralized global threat intelligence network. Wh
 
 The CrowdSec App is available as a custom add-on from the [`datf/hassio-addons`](https://github.com/datf/hassio-addons) repository:
 
-1. Navigate in your Home Assistant UI to **Settings** -> **Add-ons** -> **Add-on Store**.
-2. Click on the three dots (**⋮**) in the top right corner and select **Repositories**.
-3. Add the repository URL:
-   ```text
-   https://github.com/datf/hassio-addons
-   ```
-4. Click **Add** and wait for the repository to load.
-5. Close the repositories dialog and reload the page if needed.
-6. Scroll down to find the **HASS Apps by @datf** repository and click on **CrowdSec**.
-7. Click **Install**.
-8. Review the configuration options, then proceed to the Quick Start below to connect your log sources and bouncers.
-9. Start the app and check the logs to verify that the CrowdSec service started properly.
+1. Follow [this link](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fdatf%2Fhassio-addons) to add the repository and click Add.
+2. Scroll down to find the new repository and click on the **Crowdsec** app.
+3. Click **Install**.
+4. Review the configuration options, then proceed to the Quick Start below to connect your log sources and bouncers.
+5. Start the app and check the logs to verify that the CrowdSec service started properly.
 
 ---
 
