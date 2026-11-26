@@ -15,17 +15,10 @@ Unlike standard Caddy distributions, **Caddy Custom** includes `xcaddy` and Go d
 
 The Caddy Custom app is available from the [`datf/hassio-addons`](https://github.com/datf/hassio-addons) custom repository:
 
-1. Navigate in your Home Assistant UI to **Settings** -> **Apps** -> **Install app**.
-2. Open the context menu (**⋮**) in the top right corner and select **Repositories**.
-3. Add the repository URL:
-   ```text
-   https://github.com/datf/hassio-addons
-   ```
-4. Click **Add** and wait for the repository to load.
-5. Close the repositories dialog and reload the page if needed.
-6. Scroll down to find the **HASS Apps by @datf** repository and click on **Caddy Custom**.
-7. Click **Install**.
-8. Start the app and check the logs to verify that Caddy started properly.
+1. Follow [this link](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fdatf%2Fhassio-addons) to add the repository and click Add.
+2. Scroll down to find the new repository and click on the **Caddy Custom** app.
+3. Click **Install**.
+4. Start the app and check the logs to verify that Caddy started properly.
 
 Out of the box (when no custom `Caddyfile` is provided), Caddy Custom starts with a built-in test `Caddyfile` listening on port `8901` (`auto_https off`) and responds with `Hello, world!`.
 
